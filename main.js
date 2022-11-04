@@ -22,3 +22,26 @@ function exerciciofind() {
 
     document.querySelector("#find_resultado").innerHTML = resultado
 }
+
+document.querySelector("#filter_botao").addEventListener("click", exerciciofilter)
+
+
+function exerciciofilter() {
+    const ListaFilter = document.querySelector("#filter_lista").value
+    const ValorFilter = document.querySelector("#filter_busca").value
+
+    const vetorValores = ListaFilter.split(",")
+    const encontrou = vetorValores.filter(valor => valor == ValorFilter)
+
+    let resultado = ""
+
+    if (encontrou) {
+        resultado = "ENCONTROU"
+
+    } else {
+        resultado = "NÃO ENCONTROU"
+    }
+
+
+    document.querySelector("#filter_resultado").innerHTML = resultado
+}
