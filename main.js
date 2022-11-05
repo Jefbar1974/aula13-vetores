@@ -30,18 +30,18 @@ function exerciciofilter() {
     const ListaFilter = document.querySelector("#filter_lista").value
     const ValorFilter = document.querySelector("#filter_busca").value
 
-    const vetorValores = ListaFilter.split(",")
-    const encontrou = vetorValores.filter(valor => valor == ValorFilter)
+    const vetorValores_filter = ListaFilter.split(",")
+    const encontrou_filter = vetorValores_filter.filter(valor => valor == ValorFilter)
 
-    let resultado = ""
+    let resultado_filter = ""
 
-    if (encontrou) {
-        resultado = "ENCONTROU"
+    if (encontrou_filter) {
+        resultado_filter = "ENCONTROU"
 
     } else {
-        resultado = "NÃO ENCONTROU"
+        resultado_filter = "NÃO ENCONTROU"
     }
 
 
-    document.querySelector("#filter_resultado").innerHTML = resultado
+    document.querySelector("#filter_resultado").innerHTML = resultado_filter
 }

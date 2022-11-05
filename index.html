@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <main class="card-principal">
+        
+        <div class="card">
+            
+            <div class="card-entrada">
+                <h1>FIND</h1>
+                <input class="input" placeholder="Lista separada por ," type="text" name="" id="find_lista">
+                <input class="input" placeholder="Encontrar" type="text" name="" id="find_busca">
+                <button class="botao" id="find_botao">Encontrar</button>
 
-    <div>
-        <input placeholder="Lista separada por ," type="text" name="" id="find_lista">
-        <input placeholder="Encontrar" type="text" name="" id="find_busca">
-        <button id="find_botao">Encontrar</button>
-        <div id="find_resultado">
-            Resultado
+                <div class="card-saida" id="find_resultado">
+                    Resultado
+                </div>
+            </div>
+            
+
         </div>
 
-    </div>
-
-    <div>
-        <input placeholder="Lista separada por ," type="text" name="" id="filter_lista">
-        <input placeholder="Encontrar" type="text" name="" id="filter_busca">
-        <button id="filter_botao">Encontrar</button>
-        <div id="filter_resultado">
-            Resultado
+        <div class="card">
+            <div class="card-entrada">
+                <h1>FILTER</h1>
+                <input class="input" placeholder="Lista separada por ," type="text" name="" id="filter_lista">
+                <input class="input" placeholder="Encontrar" type="text" name="" id="filter_busca">
+                <button class="botao" id="filter_botao">Encontrar</button>
+                
+                <div class="card-saida" id="filter_resultado">
+                    Resultado
+                </div>
+            </div>
+            
         </div>
-    </div>
-    
+    </main>
+
 </body>
+
 </html>

@@ -1,4 +1,75 @@
+$fundo: #88e7d4;
+$caixaresultado: rgb(144, 97, 97);
+$botao: #788895;
+$card: #DFE6ED;
+$encontrado: rgb(168, 235, 168);
+$naoencontrado: rgb(223, 67, 67);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-    background-color: blue;
+    background-color: $fundo;
+    height: 100vh;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.card-principal {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+
+    
+}
+
+.card-entrada {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 15px 20px;
+    background-color: $card;
+    border-radius: 5px;
+    
+}
+
+.input {
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 22px;
+    
+}
+
+.botao {
+    padding: 8px;
+    background-color: $botao;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+.card-saida {
+    padding: 8px;
+    text-align: center;
+    font-size: 22px;
+    background-color: $caixaresultado;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+
+    @media screen {
+        
+    }
 }
