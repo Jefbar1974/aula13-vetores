@@ -31,12 +31,12 @@ function exerciciofilter() {
     const ValorFilter = document.querySelector("#filter_busca").value
 
     const vetorValores_filter = ListaFilter.split(",")
-    const encontrou_filter = vetorValores_filter.filter(valor_filter => valor_filter == ValorFilter)
+    const elementosEcontrados = vetorValores_filter.filter(valor_filter => valor_filter == ValorFilter)
 
     let resultado_filter = ""
 
-    if (encontrou_filter) {
-        resultado_filter = "ENCONTROU"
+    if (elementosEcontrados.length > 0) {
+        resultado_filter = `ENCONTROU ${elementosEcontrados.length} ITENS`
 
     } else {
         resultado_filter = "NÃO ENCONTROU"
