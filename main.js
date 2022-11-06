@@ -31,7 +31,7 @@ function exerciciofilter() {
     const ValorFilter = document.querySelector("#filter_busca").value
 
     const vetorValores_filter = ListaFilter.split(",")
-    const encontrou_filter = vetorValores_filter.filter(valor => valor == ValorFilter)
+    const encontrou_filter = vetorValores_filter.filter(valor_filter => valor_filter == ValorFilter)
 
     let resultado_filter = ""
 
